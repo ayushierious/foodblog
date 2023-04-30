@@ -12,7 +12,7 @@ function App() {
       <Signup/>
       <AuthDetails/> */}
       {/* <FoodList/> */}
-      <UserForm/>
+      {/* <UserForm/> */}
       <FoodList/>
     </div>
   );

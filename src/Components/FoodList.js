@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-
+import "./FoodList.css";
 function FoodList() {
   const [foodData, setFoodData] = useState([]);
   useEffect(() => {
@@ -15,13 +15,17 @@ function FoodList() {
     return null;
   }
   return (
-    <div>
+    <div className="foodbgContainer">
       {foodData.map((food) => (
-        <div key={food.food_id}>
-          <h2>{food.title}</h2>
-          <img src={food.photo} alt={food.title} />
-          <p>{food.recipe}</p>
-        </div>
+        <>
+          <div className="foodMain" key={food.food_id}>
+            <h2 className="foodh2">{food.title}</h2>
+            <img className="foodImg" src={food.photo} alt={food.title} />
+            <div className="recipeContainer">
+              <p className="foodRecipe">{food.recipe}</p>
+            </div>
+          </div>
+        </>
       ))}
     </div>
   );

@@ -1,0 +1,7 @@
+          title: `${title}`,
+          photo: `${photo}`,
+          recipe: `${recipe}`,
+          ingredient: `${ingredient}`,
+          cuisineType: `${cuisineType}`,
+          mealType: `${mealType}`,
+          dietaryRestriction: `${dietaryRestriction}`,
