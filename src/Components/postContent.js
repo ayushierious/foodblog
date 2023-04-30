@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
 import UserContext from "./UserContext";
+import './PostContent.css'
 
 const PostContent = () => {
   const userId = useContext(UserContext);
@@ -50,9 +51,9 @@ const PostContent = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h1>Add a new post</h1>
+    <div >
+      <form className="PostcontentContainer" onSubmit={handleSubmit}>
+        <h1 className="posth1">Add a new post</h1>
         <div>
           <label>
             Title:
@@ -100,7 +101,7 @@ const PostContent = () => {
               value={mealType}
               onChange={(event) => setMealType(event.target.value)}
             >
-              <option value="">-- Select Meal Type --</option>
+              <option disabled value="" style={{color: '#aaa'}}>-- Select Meal Type --</option>
               <option value="Breakfast">Breakfast</option>
               <option value="Lunch">Lunch</option>
               <option value="Dinner">Dinner</option>
@@ -115,7 +116,7 @@ const PostContent = () => {
             />
           </label>
 
-          <button type="submit">Submit</button>
+          <button className="submitbtn" type="submit">Submit</button>
         </div>
       </form>
     </div>

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {auth} from '../../firebaseConfig';
+import "./auth.css";
 
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
@@ -18,8 +19,8 @@ const Signin = () => {
     
   return (
     <div className='sign-in-container' >
-        <form onSubmit={signIn}>
-            <h1>Login to your Account</h1>
+        <form className="signinform" onSubmit={signIn}>
+            <h1 className='h1login'>Login to your Account</h1>
             <input 
             type='email' 
             placeholder='Type your email' 
@@ -33,7 +34,7 @@ const Signin = () => {
              value={password}
              onChange={(e)=>setPassword(e.target.value)}
              ></input>
-             <button  type="submit">LogIn</button>
+             <button className='loginbtn' type="submit">Login</button>
         </form>
       
     </div>

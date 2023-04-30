@@ -1,0 +1,58 @@
+
+.PostcontentContainer {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5e4a5;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    width: 400px;
+  }
+  
+  .posth1 {
+    font-family: 'Times New Roman', Times, serif;;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  select {
+    color: black;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+ .submitbtn {
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      width: 100%;
+    }
+  }
+  
