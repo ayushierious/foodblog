@@ -16,7 +16,6 @@ function FoodList() {
   }
   return (
     <div>
-      <text>Hello world</text>
       {foodData.map((food) => (
         <div key={food.food_id}>
           <h2>{food.title}</h2>
